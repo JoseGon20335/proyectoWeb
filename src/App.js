@@ -20,8 +20,8 @@ class App extends Component {
                     </div>
 
                     <div className='headerMid'>
-
-
+                        <img src = {busqueda}/>
+                        <h3>Search</h3>
                     </div>
 
                     <div className='headerRight'>
