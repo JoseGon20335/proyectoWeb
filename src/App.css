@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   
-  }
+}
+
+
+
 .background{
     background-color: #fff;
 }
+
+
 
 .header{
     padding: 10px;
@@ -16,6 +21,8 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .headerLeft{
     width: 15%;
@@ -30,6 +37,8 @@
     border-radius: 33px;
 }
 
+
+
 .headerRight{
     width: 8%;
     display: flex;
@@ -42,6 +51,8 @@
     height: 25px;
     border-radius: 33px;
 }
+
+
 
 .headerMid{
     display: flex;
@@ -61,4 +72,23 @@
     font-size: 14px;
     color: #666;
     margin-left: 20px;
+}
+
+
+
+.MainContent{
+    padding:16px;
+    -moz-column-width: 18em;
+    -webkit-column-width:14em;
+}
+
+
+
+.postInfo{
+    display: inline-block;
+    padding:  .25rem;
+    width:  100%; 
+}
+.postInfo>img{
+    border-radius: 25px;
 }

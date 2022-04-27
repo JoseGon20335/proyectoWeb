@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css'
+import { data_list } from './posts';
 
 import pinterest from './img/logo.png'
 import user from './img/user.png'
@@ -29,6 +30,17 @@ class App extends Component {
                         <img src = {mensaje}/>
                         <img src = {user}/>
                     </div>
+                </div>
+
+                <div className='MainContent'>
+                    {
+                        data_list.map((object,index = 0) =>(
+                            <div className='postInfo' key={object.key}>
+                                <img src={object.img}/>
+                            </div>
+                        )
+                        )
+                    }
                 </div>
             </div>
         );
