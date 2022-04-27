@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css'
 import { data_list } from './posts';
+import { emote_list } from './interracion';
 
 import pinterest from './img/logo.png'
 import user from './img/user.png'
@@ -37,6 +38,12 @@ class App extends Component {
                         data_list.map((object,index = 0) =>(
                             <div className='postInfo' key={object.key}>
                                 <img src={object.img}/>
+                                <div className='interracion'>
+                                    {
+                                        emote_list.map((emote,index2=0) =>()
+                                        )
+                                    }
+                                </div>
                             </div>
                         )
                         )
