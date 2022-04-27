@@ -18,7 +18,7 @@ class App extends Component {
                     <div className='headerLeft'>
                         <img src = {pinterest}/>
                         <h3 className='focusBlack'>Home</h3>
-                        <h3>Today</h3>
+                        <h3 className='focusWhite'>Today</h3>
                     </div>
 
                     <div className='headerMid'>
@@ -38,12 +38,14 @@ class App extends Component {
                         data_list.map((object,index = 0) =>(
                             <div className='postInfo' key={object.key}>
                                 <img src={object.img}/>
-                                <div className='interracion'>
+                                {/* <div className='interracion'>
                                     {
-                                        emote_list.map((emote,index2=0) =>()
+                                        emote_list.map((emote,index2=0) =>{
+                                            <></>
+                                        }
                                         )
                                     }
-                                </div>
+                                </div> */}
                             </div>
                         )
                         )
