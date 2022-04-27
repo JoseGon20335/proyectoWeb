@@ -16,7 +16,7 @@ class App extends Component {
                 <div className='header'>
                     <div className='headerLeft'>
                         <img src = {pinterest}/>
-                        <h3>Home</h3>
+                        <h3 className='focusBlack'>Home</h3>
                         <h3>Today</h3>
                     </div>
 
