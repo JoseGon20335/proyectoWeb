@@ -127,3 +127,11 @@
 .postInfo>img{
     border-radius: 25px;
 }
+
+.interracion{
+    width: 1px;
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}

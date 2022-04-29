@@ -38,14 +38,16 @@ class App extends Component {
                         data_list.map((object,index = 0) =>(
                             <div className='postInfo' key={object.key}>
                                 <img src={object.img}/>
-                                {/* <div className='interracion'>
+                                <div className='interracion'>
                                     {
-                                        emote_list.map((emote,index2=0) =>{
-                                            <></>
-                                        }
+                                        emote_list.map((emote,index2=0) =>(
+                                            <div >
+                                                <img src={emote.img}/>
+                                            </div>
+                                        )
                                         )
                                     }
-                                </div> */}
+                                </div>
                             </div>
                         )
                         )
