@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { data_list } from './posts';
 import { emote_list } from './interracion';
-
 import pinterest from './img/logo.png';
 import user from './img/user.png';
 import mensaje from './img/msg.png';
@@ -12,7 +11,9 @@ import notificacion from './img/bell.png';
 class App extends Component {
   render() {
     return (
+        
       <div className="background">
+        
         <div className="header">
           <div className="headerLeft">
             <img src={pinterest} />
@@ -22,7 +23,8 @@ class App extends Component {
 
           <div className="headerMid">
             <img src={busqueda} />
-            <h3>Search</h3>
+            <input type="text" placeholder="Search"/>
+            
           </div>
 
           <div className="headerRight">
@@ -33,22 +35,22 @@ class App extends Component {
         </div>
 
         <div className="MainContent">
-          {
-                        data_list.map((object, index = 0) => (
-                          <div className="postInfo" key={object.key}>
-                            <img src={object.img} />
-                            <div className="interracion">
-                              {
-                                        emote_list.map((emote, index2 = 0) => (
-                                          <div>
-                                            <img src={emote.img} />
-                                          </div>
-                                        ))
-                                    }
-                            </div>
-                          </div>
-                        ))
-                    }
+            {
+                data_list.map((object, index = 0) => (
+                    <div className="postInfo" key={object.key}>
+                        <img src={object.img} />
+                        <div className="interracion">
+                            {
+                                emote_list.map((emote, index2 = 0) => (
+                                    <div>
+                                        <img src={emote.img} />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                ))
+            }
         </div>
       </div>
     );
