@@ -7,7 +7,9 @@ import user from './img/user.png';
 import mensaje from './img/msg.png';
 import busqueda from './img/search.png';
 import notificacion from './img/bell.png';
-
+import flecha from './img/arrow.png'
+import compa from './img/share.png'
+import dots from './img/dots.png'
 class App extends Component {
   render() {
     return (
@@ -31,25 +33,34 @@ class App extends Component {
             <img src={notificacion} />
             <img src={mensaje} />
             <img src={user} />
+            <img src={flecha} />
           </div>
         </div>
 
         <div className="MainContent">
             {
-                data_list.map((object, index = 0) => (
-                    <div className="postInfo" key={object.key}>
-                        <img src={object.img} />
-                        <div className="interracion">
-                            {
-                                emote_list.map((emote, index2 = 0) => (
-                                    <div>
-                                        <img src={emote.img} />
-                                    </div>
-                                ))
-                            }
+              data_list.map((object, index = 0) => (
+                  <div className="postInfo" key={object.key}>
+                      <div className={"hover ".concat(object.size)}>
+                        <button className='guardar'>GUARDAR</button>
+                        <div className={"postBotones ".concat(object.size)}>
+                          <img src={compa} />
+                          <img src={dots} />
                         </div>
-                    </div>
-                ))
+                      </div>
+                      <img src={object.img} />
+          
+                      <div className="interracion">
+                          {
+                              emote_list.map((emote, index2 = 0) => (
+                                  <div>
+                                      <img src={emote.img} />
+                                  </div>
+                              ))
+                          }
+                      </div>
+                  </div>
+              ))
             }
         </div>
       </div>
